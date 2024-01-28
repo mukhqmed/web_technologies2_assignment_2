@@ -1,22 +1,60 @@
-# 🚀 Fullstack Web Development With Projects
+# Weather App
 
-Welcome to the Fullstack Web Development with MERN repository! Here you'll find a series of YouTube tutorials and projects that will teach you how to build fullstack web applications using the latest technologies, including HTML, CSS, JavaScript, Node.js, Express, Mongoose, and MongoDB.
+## Overview
 
-The MERN stack is a popular choice for building scalable and efficient web applications, and this repository provides you with a hands-on approach to learning the key concepts and best practices for building fullstack web applications with the MERN stack.
+This Weather App provides users with current weather information for a specific city, including temperature, humidity, wind speed, pressure, description, coordinates, country code, rain volume, sunrise time, and sunset time. Additionally, it displays the current time based on the city's timezone and shows a map with the city's location.
 
-# Branches
+## Technologies Used
 
-For each project in the series, there is a corresponding branch in this repository that represents a specific programming language or framework, including the starter code. This allows you to easily follow along with the code and start each project with the provided starter code. Simply switch to the appropriate branch to access the code for each project.
+- HTML
+- CSS
+- JavaScript
+- Leaflet.js (for map display)
+- OpenWeatherMap API (for weather data)
+- Sunrise-Sunset API (for astronomy data)
+- TimezoneDB API (for timezone data)
+- Express.js (for server-side functionality)
 
-Here are the branches for each project in the series:
+## Setup Instructions
 
-🔴 - HTML/CSS
-🔴 - JavaScript
-🔴 - Node.js
-🔴 - Express
-🔴 - Mongoose
-🔴 - MongoDB
-🔴 - MERN
-🔴 - Others
+1. Clone the repository:
 
-[Follow us to start building ](https://www.youtube.com/c/inovotek-academy)
+2. Navigate to the project directory:
+   
+3. Install dependencies:
+
+
+4. Start the server:
+
+
+5. Open a web browser and go to http://localhost:3000
+
+## API Usage
+
+- OpenWeatherMap API: Provides weather data for a given city. Used to retrieve temperature, humidity, wind speed, pressure, description, coordinates, country code, and rain volume.
+
+- Sunrise-Sunset API: Provides sunrise and sunset times for a given location (latitude and longitude). Used to retrieve sunrise and sunset times based on the city's coordinates.
+
+- TimezoneDB API: Provides timezone information for a given location (latitude and longitude). Used to determine the city's timezone and display the current time accordingly.
+
+## Key Design Decisions
+
+- **User Interface**: The app features a simple and intuitive user interface with a single input field for entering the city name and a "Get Weather" button for fetching weather data.
+
+- **Map Display**: The app utilizes Leaflet.js to display a map with the city's location marked by a marker. This provides users with a visual representation of the city's geographical coordinates.
+
+- **Error Handling**: The app includes error handling to handle cases where the user enters an invalid city name or encounters issues with fetching weather data. Error messages are displayed to notify the user of any issues.
+
+- **Asynchronous Data Fetching**: The app uses asynchronous JavaScript functions and the `async/await` syntax to fetch weather, astronomy, and timezone data from external APIs. This ensures that the app remains responsive while fetching data asynchronously.
+
+## Additional Notes
+
+- The app's design is responsive and adjusts to different screen sizes using media queries in the CSS stylesheet.
+
+- The app is built using the Express.js framework for server-side functionality, allowing it to handle HTTP requests and serve static files.
+
+- The app's dependencies are managed using npm, and the server is started using the `npm start` command.
+
+- Feel free to explore and modify the code to customize the app according to your requirements.
+
+
