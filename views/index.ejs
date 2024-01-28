@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/1163/1163657.png">
+</head>
+
+<body>
+  
+
+<div class="container">
+    <h1 class="mt-4 mb-4">Weather App</h1>
+    <form id="weatherForm">
+        <div class="row">
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="city" placeholder="Enter city name">
+            </div>
+            <div class="col-sm-4">
+                <button type="submit">Get Weather</button>
+            </div>
+        </div>
+    </form>
+    <div id="weather-info" class="weather-info mt-4"></div>
+    <div class="timezone-info mt-4"></div>
+    <div class="map-container mt-4">
+        <div id="map" class="map"></div>
+    </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

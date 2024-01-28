@@ -1,0 +1,162 @@
+body {
+  font-family:Roboto Slab, sans-serif;
+  background-image: url('https://wallpapersmug.com/download/3840x2160/7a22c5/forest_mountains_sunset_cool_weather_minimalism.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.astronomy-info {
+  display:inline-block;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 20px;
+}
+
+.astronomy-info p {
+  margin: 0;
+}
+
+.astronomy-info i {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.629); 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
+  padding: 20px; 
+}
+
+
+h1 {
+  margin-top: 70px;
+  color: rgba(12, 120, 193, 0.788);
+  font-size:60px;
+}
+
+form {
+  margin-top: 30px;
+  display: inline-block;
+  text-align: left;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: rgba(245, 255, 139, 0.819);
+}
+.form-control,
+.btn {
+    height: 45px; 
+}
+
+button[type="submit"] {
+  padding: 10px 20px; 
+  background-color: rgb(245, 245, 100);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  white-space: nowrap; 
+  text-align: left;
+}
+
+
+button[type="submit"]:hover {
+  background-color: rgba(169, 169, 29, 0.716); 
+}
+
+.card {
+  background-color: #f9f7faab;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+.timezone-info p {
+  display:inline-block;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  width: auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 20px;
+}
+
+
+.loading {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.error {
+  font-size: 22px; 
+  font-weight: bold; 
+  color: #f00; 
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3); 
+  padding: 15px; 
+}
+#temp2 {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(79, 168, 228, 0.695);
+  margin-bottom: auto;
+  margin-top: auto;
+}
+#temp {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgba(209, 142, 60, 0.808);
+  margin-bottom: auto;
+  margin-top: auto;
+}
+#ftemp{
+  font-size: 20px;
+}
+@media (min-width: 576px) {
+  /* Adjust styles for small devices */
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 560px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+.map {
+  height: 400px;
+}
